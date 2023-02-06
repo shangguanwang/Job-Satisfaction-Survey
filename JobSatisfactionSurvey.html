@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Job Satisfaction Self-Survey</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../CSS/jobstyle.css" />
+</head>
+
+<body>
+    <h1>Job Satisfaction Self-Survey</h1>
+    <h4>Unsure whether to leave your job or not? Fill out this questionnaire to find out</h4>
+    <form>
+        <fieldset class="job-info">
+            <label for="job-tytle">What is your job title? <input type="text" id="job-title"></label>
+            <label for="job-function">What is your job function?</label>
+            <select id="job-function">
+                <!--job function dropdown-->
+                <option value="design">Design</option>
+                <option value="software development">Software Development</option>
+                <option value="data science">Data Science</option>
+                <option value="product">Product</option>
+                <option value="marketing">Marketing</option>
+                <option value="other">Other</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label for="happyscale">On a scale of 1-5, how happy are you with your job? (1=max pain,
+                5=enjoyable)</label>
+            <input type="number" id="happyscale" class="happyscale" min="1" max="5" />
+            <!-- mood textbox-->
+            <label for="mood">Use 3 words to describe your mood at work?</label>
+            <div class="mood-input">
+                <p>I feel</p><input class="fill-out">
+                <p>, </p>
+                <input type="text">
+                <p>, and </p>
+                <input type="text">
+                <p>at work</p>
+            </div>
+        </fieldset>
+        <fieldset>
+            <label for="recognition">Do you feel your contributions and efforts are being recognized by your managers
+                and colleagues?</label>
+            <label for="recognition-yes"><input type="radio" id="recognition-yes" name="recognition">Yes</label>
+            <label for="recognition-no"><input type="radio" id="recognition-no" name="recognition">No</label>
+            <br>
+            <label for="admire">Do you have someone you admire within your company?</label>
+            <label for="admire-yes"><input type="radio" id="admire-yes" name="admire">Yes</label>
+            <label for="admire-no"><input type="radio" id="admire-no" name="admire">No</label>
+            <br>
+            <label>Will you be happy if you continue career progression at your current company within the next 3-5
+                years?</label>
+            <label for="become-yes"><input type="radio" id="become-yes" name="become">Yes, give me that
+                promotion</label>
+            <label for="become-no"><input type="radio" id="become-no" name="become">No, not really</label>
+        </fieldset>
+        <fieldset class="valueset">
+            <label for="value">Does your current job provide you the following?</label>
+            <label for="compensation"><input type="checkbox" name="value" id="compensation"> Financial Stability</label>
+            <label for="development"><input type="checkbox" name="value" id="development"> Professional
+                Development</label>
+            <label for="relationship"></label><input type="checkbox" name="value" id="relationship"> Positive Working
+            Environment</label>
+            <label for="social"></label><input type="checkbox" name="value" id="social"> Social Impact</label>
+            <br>
+            <textarea class="inputbox" placeholder="Other reasons not listed above"></textarea>
+        </fieldset>
+    </form>
+    <div class="buttom-submit">
+        <button type="submit" class="submit">Submit</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+
+html{
+    padding:20px;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color:  #DDD0C8;
+}
+
+h1, h4{
+    text-align: center;
+}
+/*modify the background color of form */
+form {
+    background-color: #FFFFF0;
+    margin-left:10%;
+    margin-right:10%;
+}
+/*make the border lighter */
+fieldset {
+    border:1px solid #ddd;
+}
+/*make some room on the top of the 1st fieldset */
+.job-info{
+    padding-top:15px;
+}
+
+/*make every new label start on a separate line */
+label {
+    display: block;
+}
+/*make some room between this element with the next */
+.happyscale{
+    margin-bottom:10px;
+}
+/* make multiple input boxes on the same line */
+.mood-input {
+    display: flex;
+}
+/*adjust the size of the mood input box */
+.mood-input input {
+    width: 80px;
+    height:20px;
+    margin-top: 10px;
+}
+/*make the input box wider */
+.inputbox {
+    width:300px;
+}
+/*align the submit button at the center of the page */
+.buttom-submit{
+    text-align: center;
+}
+/*adjust the size of the submit text */
+.submit {
+    font-size: 1rem;
+}
